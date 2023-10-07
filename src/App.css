@@ -1,0 +1,30 @@
+#drum-machine {
+  text-align: center;
+  margin: 50px;
+}
+
+.whole-drum {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 50px auto;
+  width: min-content;
+}
+
+.drum-pad {
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-size: 25px;
+  background-color: #3f3f3f;
+  border: black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.264);
+  transition: all 0.1s ease-in-out;
+}
+
+.drum-pad:active {
+  transform: translate(2px, 2px);
+  background-color: rgb(94, 0, 94);
+  outline: none;
+}
